@@ -1,12 +1,6 @@
 import Head from "next/head";
 import Project from "../components/Project";
-import {
-  faCss3Alt,
-  faHtml5,
-  faJs,
-  faPython,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
+import { FaCss3Alt, FaHtml5, FaJs, FaPython, FaReact } from "react-icons/fa";
 
 export default function Projects() {
   return (
@@ -22,14 +16,18 @@ export default function Projects() {
             name="urlx.cf"
             description="🔗 A simple URL shortener."
             link="https://urlx.cf"
-            icons={[faJs, faHtml5, faCss3Alt]}
+            icons={[
+              <FaJs key="js" />,
+              <FaHtml5 key="html5" />,
+              <FaCss3Alt key="css" />,
+            ]}
             github="https://github.com/wheredidhugo/urlx.cf"
           />
           <Project
             name="CloneDirecte"
             description="Une alternative à EcoleDirecte"
             link="https://clonedirecte.cf"
-            icons={[faReact]}
+            icons={[<FaReact key="react" />]}
             github="https://github.com/clonedirecte"
             npmjs="https://npmjs.com/~clonedirecte"
           />
@@ -37,7 +35,11 @@ export default function Projects() {
             name="FootAPI"
             description="⚽ A simple API for Football"
             link="https://footapi.cf"
-            icons={[faJs, faHtml5, faCss3Alt]}
+            icons={[
+              <FaJs key="js" />,
+              <FaHtml5 key="html5" />,
+              <FaCss3Alt key="css" />,
+            ]}
             github="https://github.com/footapi"
           />
           <Project
@@ -50,26 +52,38 @@ export default function Projects() {
             name="Fullscreen Spotify"
             description="🎧 A website that simply shows what you’re listening to using Last.fm"
             link="https://spotify.hugo.rest"
-            icons={[faJs, faHtml5, faCss3Alt]}
+            icons={[
+              <FaJs key="js" />,
+              <FaHtml5 key="html5" />,
+              <FaCss3Alt key="css" />,
+            ]}
             github="https://github.com/wheredidhugo/fullscreen-spotify"
           />
           <Project
             name="GitHub Username Checker"
             description="🧾 Checks for random usernames with a define number of letters on GitHub"
             link="https://github.com/wheredidhugo/fullscreen-spotify"
-            icons={[faPython]}
+            icons={[<FaPython key="python" />]}
           />
           <Project
             name="Discord Last.fm"
             description="🎵 A simple Discord RPC for Last.fm"
             link="https://github.com/wheredidhugo/discord-last.fm"
-            icons={[faJs, faHtml5, faCss3Alt]}
+            icons={[
+              <FaJs key="js" />,
+              <FaHtml5 key="html5" />,
+              <FaCss3Alt key="css" />,
+            ]}
           />
           <Project
             name="Audio Russian Roulette"
             description="🔫 Turn your volume up and wait for a meme/funny song to play."
             link="https://github.com/wheredidhugo/audio-russian-roulette"
-            icons={[faJs, faHtml5, faCss3Alt]}
+            icons={[
+              <FaJs key="js" />,
+              <FaHtml5 key="html5" />,
+              <FaCss3Alt key="css" />,
+            ]}
           />
         </div>
       </div>

@@ -1,5 +1,4 @@
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import NavbarText from "../Text";
 
@@ -14,7 +13,7 @@ export default function XL({ items }) {
         className="text-xl"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
-        <FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} />
+        {theme === "dark" ? <FaSun /> : <FaMoon />}
       </button>
     </div>
   );

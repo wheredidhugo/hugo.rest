@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faJs,
-  faReact,
-  faVuejs,
-  faRaspberryPi,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
+  FaJs,
+  FaReact,
+  FaVuejs,
+  FaRaspberryPi,
+  FaPython,
+} from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 import Image from "next/image";
 import logo from "../public/hugo-half.png";
 
@@ -33,23 +33,19 @@ export default function Home() {
           Welcome to my website, I don&apos;t really know what to put here right
           now so consider this as a placeholder.
         </p>
-        <p>
-          I like <FontAwesomeIcon icon={faJs} /> and wrote my website using{" "}
-          <FontAwesomeIcon icon={faReact} /> (Next.js but couldn&apos;t find the
-          icon).
+        <p className="child:inline">
+          I like <FaJs /> and wrote my website using <TbBrandNextjs />.
+        </p>
+        <p className="child:inline">
+          In the past I&apos;ve used, but I&apos;m now using <FaReact /> for
+          multiple reasons.
+        </p>
+        <p className="child:inline">
+          I would also enjoy learning more <FaPython /> at school and start
+          making cool projects with it.
         </p>
         <p>
-          In the past I&apos;ve used <FontAwesomeIcon icon={faVuejs} />, but
-          I&apos;m now using <FontAwesomeIcon icon={faReact} /> for multiple
-          reasons.
-        </p>
-        <p>
-          I would also enjoy learning more <FontAwesomeIcon icon={faPython} />{" "}
-          at school and start making cool projects with it.
-        </p>
-        <p>
-          I would also enjoy getting a <FontAwesomeIcon icon={faRaspberryPi} />{" "}
-          4.
+          I would also enjoy getting a <FaRaspberryPi className="inline" /> 4.
         </p>
         <p>
           I don&apos;t really know how to end this but I need lines to finish.
@@ -57,11 +53,11 @@ export default function Home() {
         <p>
           Here are my{" "}
           <Link href="/projects">
-            <span>projects</span>
+            <span className="underline cursor-pointer">projects</span>
           </Link>{" "}
           and here&apos;s how to{" "}
           <Link href="/contact">
-            <span>contact me</span>
+            <span className="underline cursor-pointer">contact me</span>
           </Link>
         </p>
         <p>

@@ -1,5 +1,4 @@
-import { faBars, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
 import NavbarText from "../Text";
 import { useTheme } from "next-themes";
@@ -22,7 +21,7 @@ export default function Burger({ items }) {
   return (
     <div className="flex flex-col text-2xl h-0">
       <button className="text-right" onClick={burgerClick}>
-        <FontAwesomeIcon icon={faBars} />
+        <FaBars />
       </button>
       {/* TODO: add animation when menu is opened */}
       <div
@@ -36,10 +35,10 @@ export default function Burger({ items }) {
           />
         ))}
         <button
-          className="text-2xl"
+          className="text-2xl mx-auto"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
-          <FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} />
+          {theme === "dark" ? <FaSun /> : <FaMoon />}
         </button>
       </div>
     </div>

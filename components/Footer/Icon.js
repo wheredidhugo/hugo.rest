@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function FooterIcon({ icon, link }) {
   return (
     <a
@@ -9,7 +7,7 @@ export default function FooterIcon({ icon, link }) {
       className="opacity-30 dark:opacity-10 hover:opacity-100 dark:hover:opacity-100 cursor-pointer"
     >
       {/* I don't know why I need a dark:hover:opacity-100 */}
-      <FontAwesomeIcon icon={icon} />
+      {icon}
     </a>
   );
 }
