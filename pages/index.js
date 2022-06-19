@@ -37,15 +37,16 @@ export default function Home() {
           I like <FaJs /> and wrote my website using <TbBrandNextjs />.
         </p>
         <p className="child:inline">
-          In the past I&apos;ve used, but I&apos;m now using <FaReact /> for
-          multiple reasons.
+          In the past I&apos;ve used <FaVuejs />, but I&apos;m now using{" "}
+          <FaReact /> for multiple reasons.
         </p>
         <p className="child:inline">
           I would also enjoy learning more <FaPython /> at school and start
           making cool projects with it.
         </p>
         <p>
-          I would also enjoy getting a <FaRaspberryPi className="inline" /> 4.
+          I recently got a <FaRaspberryPi className="inline" /> 4, so I&apos;m
+          looking forward to doing small server projects with it.
         </p>
         <p>
           I don&apos;t really know how to end this but I need lines to finish.
