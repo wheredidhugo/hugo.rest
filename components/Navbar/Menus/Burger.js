@@ -2,6 +2,7 @@ import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
 import NavbarText from "../Text";
 import { useTheme } from "next-themes";
+import Theme from "./Theme";
 
 export default function Burger({ items }) {
   const { theme, setTheme } = useTheme();
@@ -34,12 +35,7 @@ export default function Burger({ items }) {
             key={`burger-${index}`}
           />
         ))}
-        <button
-          className="text-2xl mx-auto"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        >
-          {theme === "dark" ? <FaSun /> : <FaMoon />}
-        </button>
+        <Theme className="text-2xl mx-auto" />
       </div>
     </div>
   );

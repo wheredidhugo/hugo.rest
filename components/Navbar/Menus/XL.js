@@ -1,6 +1,7 @@
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import NavbarText from "../Text";
+import Theme from "./Theme";
 
 export default function XL({ items }) {
   const { theme, setTheme } = useTheme();
@@ -9,12 +10,7 @@ export default function XL({ items }) {
       {items.map((item, index) => (
         <NavbarText text={item.text} link={item.link} key={index} />
       ))}
-      <button
-        className="text-xl"
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      >
-        {theme === "dark" ? <FaSun /> : <FaMoon />}
-      </button>
+      <Theme className="text-xl" />
     </div>
   );
 }
