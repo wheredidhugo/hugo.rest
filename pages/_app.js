@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="description" content="@wheredidhugo's homepage" />
       </Head>
       <ThemeProvider attribute="class">
-        <div className="p-7 bg-white dark:bg-zinc-900 text-black  dark:text-white h-screen text-center sm:text-left">
+        <div className="transition ease-in-out duration-300 p-7 bg-white dark:bg-zinc-900 text-black  dark:text-white h-screen text-center sm:text-left">
           <Navbar />
           <Component {...pageProps} />
           <Footer />
